@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminAddNewProductActivity">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_launcher_background"
+        android:id="@+id/select_product_image"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Product Name"
+        android:id="@+id/product_name"
+        android:layout_below="@+id/select_product_image"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Product Description"
+        android:id="@+id/productDescription"
+        android:layout_below="@+id/product_name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Product price"
+        android:id="@+id/productPrice"
+        android:layout_below="@+id/productDescription"
+        />
+    <Button
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Produce"
+        android:id="@+id/productAddButton"
+        android:layout_below="@+id/productPrice"
+        />
+
+</RelativeLayout>

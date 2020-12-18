@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:id="@+id/login_applogo"
+        android:src="@drawable/bangladesh_i"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_phone_number_input"
+        android:layout_below="@+id/login_applogo"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:hint="Phone Number"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_password_input"
+        android:layout_below="@+id/login_phone_number_input"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        />
+    <LinearLayout
+        android:id="@+id/linear_layour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/login_password_input"
+        >
+        <CheckBox
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rememger_me_chkb"
+            android:text="Remember me"
+            />
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password"
+            android:id="@+id/forgot_password"
+            />
+
+    </LinearLayout>
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_above="@+id/admin_penal_link"
+        android:id="@+id/login_btn"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="I'm an admin"
+        android:id="@+id/admin_penal_link"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="I'm an not admin"
+        android:id="@+id/not_admin_penal_link"
+        android:layout_margin="10dp"
+        android:visibility="invisible"
+        />
+
+
+
+</RelativeLayout>
